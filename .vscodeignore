@@ -1,0 +1,8 @@
+demos
+docs
+src
+.gitignore
+.prettierignore
+.prettierrc
+*.afdesign
+*.afphoto

@@ -1,0 +1,61 @@
+{
+  "name": "kelp-forest-theme-vscode",
+  "displayName": "Kelp Forest Theme",
+  "description": "A cool and cozy dark theme for Visual Studio Code",
+  "version": "1.0.0",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Jason Theiler <turret.jason@gmail.com>",
+  "publisher": "jasontheiler",
+  "icon": "images/logo.png",
+  "galleryBanner": {
+    "color": "#14191B",
+    "theme": "dark"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "Theme",
+    "Dark",
+    "Kelp",
+    "Forest"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Kelp Forest",
+        "uiTheme": "vs-dark",
+        "path": "./themes/kelp-forest.json"
+      },
+      {
+        "label": "Kelp Forest Italic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/kelp-forest-italic.json"
+      },
+      {
+        "label": "Kelp Forest Bold",
+        "uiTheme": "vs-dark",
+        "path": "./themes/kelp-forest-bold.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasontheiler/kelp-forest-theme-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/jasontheiler/kelp-forest-theme-vscode/issues"
+  },
+  "engines": {
+    "vscode": "^1.26.0"
+  },
+  "devDependencies": {
+    "file-system": "^2.2.2",
+    "mustache": "^3.2.1",
+    "prettier": "^1.19.1"
+  },
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,json,md}\"",
+    "build": "node ./src/build"
+  }
+}
