@@ -1,5 +1,5 @@
 <p align="center">
-  <a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode">
     <img src="https://github.com/jasontheiler/kelp-forest-theme-vscode/raw/master/images/logo.png" alt="Kelp Forest Theme" height="256px" />
   </a>
 </p>
