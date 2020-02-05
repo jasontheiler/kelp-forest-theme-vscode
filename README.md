@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode">
-    <img src="https://github.com/jasontheiler/kelp-forest-theme-vscode/raw/master/images/logo.png" alt="Kelp Forest Theme" height="256px" />
+    <img src="https://raw.githubusercontent.com/jasontheiler/kelp-forest-theme-vscode/master/images/logo.png" alt="Kelp Forest Theme" height="256px" />
   </a>
 </p>
 
@@ -18,7 +18,7 @@
   </a>
 </p>
 
-<img src="https://github.com/jasontheiler/kelp-forest-theme-vscode/raw/master/images/preview-main.png" alt="Kelp Forest Theme preview" />
+<img src="https://raw.githubusercontent.com/jasontheiler/kelp-forest-theme-vscode/master/images/preview-main.png" alt="Kelp Forest Theme preview" />
 
 This theme is based on [Subnautica's](https://unknownworlds.com/subnautica/) Kelp Forest Biome and [Jonathan Olaleye's](https://github.com/jolaleye) [Horizon Theme](https://marketplace.visualstudio.com/items?itemName=jolaleye.horizon-theme-vscode). It includes a default, italic and bold version of the theme.
 
@@ -103,7 +103,7 @@ Once you have installed either of these extensions, add the appropriate settings
 
 ### Better Comments
 
-<img src="https://github.com/jasontheiler/kelp-forest-theme-vscode/raw/master/images/preview-better-comments.png" alt="Better Comments preview" />
+<img src="https://raw.githubusercontent.com/jasontheiler/kelp-forest-theme-vscode/master/images/preview-better-comments.png" alt="Better Comments preview" />
 
 ```json
 "better-comments.tags": [
@@ -137,7 +137,7 @@ Once you have installed either of these extensions, add the appropriate settings
 
 ### Bracket Pair Colorizer 2
 
-<img src="https://github.com/jasontheiler/kelp-forest-theme-vscode/raw/master/images/preview-bracket-pair-colorizer-2.png" alt="Bracket Pair Colorizer 2 preview" />
+<img src="https://raw.githubusercontent.com/jasontheiler/kelp-forest-theme-vscode/master/images/preview-bracket-pair-colorizer-2.png" alt="Bracket Pair Colorizer 2 preview" />
 
 ```json
 "bracket-pair-colorizer-2.colors": ["#15C3AC", "#E8E818", "#E69C18"],
