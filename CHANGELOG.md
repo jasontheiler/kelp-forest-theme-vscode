@@ -10,7 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Update logo
+- Update image names
 - Update image source links in README.md
+
+### Removed
+
+- Move preview images unused in README.md
 
 ## [1.0.1] - 2020-02-03
 

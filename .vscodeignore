@@ -1,8 +1,8 @@
 demos
 docs
 src
+*.afdesign
+*.afphoto
 .gitignore
 .prettierignore
 .prettierrc
-*.afdesign
-*.afphoto

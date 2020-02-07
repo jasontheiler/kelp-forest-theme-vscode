@@ -1,0 +1,25 @@
+$min-width-base: 384px;
+
+@mixin small {
+  @media only screen and (min-width: $min-width-base) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (min-width: $min-width-base * 2) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: $min-width-base * 3) {
+    @content;
+  }
+}
+
+@mixin extra-large {
+  @media only screen and (min-width: $min-width-base * 4) {
+    @content;
+  }
+}

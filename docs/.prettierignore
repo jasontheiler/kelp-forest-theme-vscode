@@ -1,5 +1,4 @@
 .cache
 .temp
 dist
-themes
 package-lock.json

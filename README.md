@@ -18,7 +18,7 @@
   </a>
 </p>
 
-<img src="https://raw.githubusercontent.com/jasontheiler/kelp-forest-theme-vscode/master/images/preview-main.png" alt="Kelp Forest Theme preview" />
+<img src="https://raw.githubusercontent.com/jasontheiler/kelp-forest-theme-vscode/master/images/preview.png" alt="Kelp Forest Theme preview" />
 
 This theme is based on [Subnautica's](https://unknownworlds.com/subnautica/) Kelp Forest Biome and [Jonathan Olaleye's](https://github.com/jolaleye) [Horizon Theme](https://marketplace.visualstudio.com/items?itemName=jolaleye.horizon-theme-vscode). It includes a default, italic and bold version of the theme.
 

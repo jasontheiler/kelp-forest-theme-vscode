@@ -1,0 +1,37 @@
+{
+  "name": "kelp-forest-theme-vscode-docs",
+  "version": "0.1.0",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Jason Theiler <turret.jason@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasontheiler/kelp-forest-theme-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/jasontheiler/kelp-forest-theme-vscode/issues"
+  },
+  "dependencies": {
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-json": "^0.2.1",
+    "gh-pages": "^2.2.0",
+    "gridsome": "^0.7.12",
+    "node-fetch": "^2.6.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2"
+  },
+  "scripts": {
+    "format": "prettier --write \"**/*.{scss,js,vue}\"",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "build": "gridsome build",
+    "deploy": "gridsome build && gh-pages -d dist"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    ">0.25%"
+  ]
+}
