@@ -1,8 +1,8 @@
+**/.temp
 .cache
-.DS_Store
 dist
 node_modules
-src/.temp
 *.log
-.env
+.DS_Store
 .env.*
+.env

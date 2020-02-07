@@ -1,8 +1,10 @@
+.vscode
 demos
 docs
 src
-*.afdesign
-*.afphoto
+**/*.afdesign
+**/*.afphoto
+.DS_Store
 .gitignore
 .prettierignore
 .prettierrc
