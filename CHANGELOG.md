@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.2] - TBA
 
+### Added
+
+- Add background color for folded ranges
+
 ### Changed
 
 - Update logo

@@ -127,6 +127,7 @@
     "editorLightBulbAutoFix.foreground": "{{ ui.quaternaryAccent }}",
     "editorBracketMatch.background": "{{ ui.accentAlt }}{{ alpha.none }}",
     "editorBracketMatch.border": "{{ ui.accentAlt }}",
+    "editor.foldBackground": "{{ ui.primaryAccent }}{{ alpha.low }}",
     "editorOverviewRuler.border": "{{ ui.border }}{{ alpha.med }}",
     "editorOverviewRuler.findMatchForeground": "{{ ui.septenaryAccent }}{{ alpha.med }}",
     "editorOverviewRuler.rangeHighlightForeground": "{{ ui.septenaryAccent }}{{ alpha.med }}",
