@@ -1,12 +1,12 @@
 <template>
-  <div class="color-square" :style="{ backgroundColor: color }">
+  <div class="colorpalette-item" :style="{ backgroundColor: color }">
     <span :class="valueClass">{{ color }}</span>
   </div>
 </template>
 
 <script>
 export default {
-  name: "ColorSquare",
+  name: "ColorpaletteItem",
   props: {
     color: {
       type: String,
@@ -40,11 +40,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/styles/_colorscheme";
-
-.color-square {
-  width: 128px;
-  height: 128px;
+.colorpalette-item {
+  width: 96px;
+  height: 96px;
   display: flex;
   justify-content: center;
   align-items: center;

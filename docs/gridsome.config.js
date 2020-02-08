@@ -4,6 +4,8 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const path = require("path")
+
 module.exports = {
   siteUrl: "https://jasontheiler.github.io",
   pathPrefix: "/kelp-forest-theme-vscode",
@@ -19,4 +21,21 @@ module.exports = {
       },
     },
   ],
+  chainWebpack(config) {
+    const preprocessor = "scss"
+    const types = ["vue-modules", "vue", "normal-modules", "normal"]
+
+    for (const type of types) {
+      config.module
+        .rule(preprocessor)
+        .oneOf(type)
+        .use("style-resource")
+        .loader("style-resources-loader")
+        .options({
+          patterns: [
+            path.resolve(__dirname, `./src/styles/_*.${preprocessor}`),
+          ],
+        })
+    }
+  },
 }

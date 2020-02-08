@@ -19,10 +19,10 @@ module.exports = function(api) {
       typeName: "syntaxColors",
     })
 
-    for (const [name, color] of Object.entries(globalColors.syntax)) {
+    for (const [name, value] of Object.entries(globalColors.syntax)) {
       syntaxColors.addNode({
         name,
-        color,
+        value,
       })
     }
 
@@ -30,10 +30,10 @@ module.exports = function(api) {
       typeName: "uiColors",
     })
 
-    for (const [name, color] of Object.entries(globalColors.ui)) {
+    for (const [name, value] of Object.entries(globalColors.ui)) {
       uiColors.addNode({
         name,
-        color,
+        value,
       })
     }
 
@@ -41,10 +41,10 @@ module.exports = function(api) {
       typeName: "normalTerminalColors",
     })
 
-    for (const [name, color] of Object.entries(globalColors.ansi.normal)) {
+    for (const [name, value] of Object.entries(globalColors.ansi.normal)) {
       normalTerminalColors.addNode({
         name,
-        color,
+        value,
       })
     }
 
@@ -52,10 +52,10 @@ module.exports = function(api) {
       typeName: "brightTerminalColors",
     })
 
-    for (const [name, color] of Object.entries(globalColors.ansi.bright)) {
+    for (const [name, value] of Object.entries(globalColors.ansi.bright)) {
       brightTerminalColors.addNode({
         name,
-        color,
+        value,
       })
     }
   })
