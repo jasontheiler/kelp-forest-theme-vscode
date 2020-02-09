@@ -482,7 +482,7 @@
       }
     },
     {
-      "name": "Provieded variables",
+      "name": "Provided variables",
       "scope": "support.variable",
       "settings": {
         "foreground": "{{ syntax.kelp }}"
