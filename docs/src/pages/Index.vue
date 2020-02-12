@@ -1,30 +1,10 @@
 <template>
   <div>
-    <g-image
-      v-for="{ node } of $page.allPreviews.edges"
-      :key="node.id"
-      :src="node.image"
-      :alt="node.title"
-      class="g-image"
-    />
+    <Previews />
 
     <Colorpalette />
   </div>
 </template>
-
-<page-query>
-query {
-  allPreviews(sort: {by: "title", order: ASC}) {
-    edges {
-      node {
-        id
-        title
-        image
-      }
-    }
-  }
-}
-</page-query>
 
 <script>
 export default {
@@ -34,8 +14,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.g-image {
-  width: 1024px;
-}
-</style>
+<style lang="scss" scoped></style>

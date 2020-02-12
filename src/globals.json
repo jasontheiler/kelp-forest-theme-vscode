@@ -6,16 +6,16 @@
     "kelpHighlight": "#C8E8DD",
     "waterHighlight": "#C8DCE9",
     "water": "#15C3AC",
-    "creepVineSeed": "#E8E818",
-    "creepVineSeedGlow": "#E69C18"
+    "creepVineSeed": "#FFE030",
+    "creepVineSeedGlow": "#FF9018"
   },
   "ui": {
     "darkText": "#060C06",
-    "shadow": "#0B1012",
-    "backdrop": "#0F1416",
-    "background": "#14191B",
-    "backgroundAlt": "#1F2628",
-    "border": "#2F4648",
+    "shadow": "#0B1210",
+    "backdrop": "#0F1614",
+    "background": "#141B19",
+    "backgroundAlt": "#1F2826",
+    "border": "#2F4846",
     "accent": "#344848",
     "accentHighlight": "#445858",
     "accentAlt": "#647878",
@@ -24,8 +24,8 @@
     "primaryAccent": "#0AE194",
     "secondaryAccent": "#15C3AC",
     "tertiaryAccent": "#24B1C5",
-    "quaternaryAccent": "#E8E818",
-    "quinaryAccent": "#E69C18",
+    "quaternaryAccent": "#FFE030",
+    "quinaryAccent": "#FF9018",
     "senaryAccent": "#E0093C",
     "septenaryAccent": "#ED008C"
   },
@@ -34,7 +34,7 @@
       "green": "#0AE194",
       "cyan": "#15C3AC",
       "blue": "#24B1C5",
-      "yellow": "#E8E818",
+      "yellow": "#FFE030",
       "red": "#E0093C",
       "magenta": "#ED008C"
     },
@@ -42,7 +42,7 @@
       "green": "#5AF8BF",
       "cyan": "#4FECD7",
       "blue": "#6CD5E4",
-      "yellow": "#F1F174",
+      "yellow": "#FFEF95",
       "red": "#F8587E",
       "magenta": "#FF51B8"
     }

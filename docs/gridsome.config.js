@@ -11,6 +11,7 @@ module.exports = {
   pathPrefix: "/kelp-forest-theme-vscode",
   siteName: "Kelp Forest Theme",
   titleTemplate: "%s | Kelp Forest Theme",
+  siteDescription: "A cool and cozy dark theme for Visual Studio Code",
   icon: "./src/icons/logo.svg",
   plugins: [
     {

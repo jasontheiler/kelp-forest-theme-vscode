@@ -8,13 +8,13 @@
 
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode">
-    <img src="https://img.shields.io/vscode-marketplace/v/jasontheiler.kelp-forest-theme-vscode.svg?style=for-the-badge&labelColor=14191B&color=0AE194" alt="version" />
+    <img src="https://img.shields.io/vscode-marketplace/v/jasontheiler.kelp-forest-theme-vscode.svg?style=for-the-badge&labelColor=141B19&color=0AE194" alt="version" />
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode">
-    <img src="https://img.shields.io/visual-studio-marketplace/d/jasontheiler.kelp-forest-theme-vscode.svg?style=for-the-badge&labelColor=14191B&color=0AE194" alt="downloads" />
+    <img src="https://img.shields.io/visual-studio-marketplace/d/jasontheiler.kelp-forest-theme-vscode.svg?style=for-the-badge&labelColor=141B19&color=0AE194" alt="downloads" />
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode">
-    <img src="https://img.shields.io/visual-studio-marketplace/stars/jasontheiler.kelp-forest-theme-vscode.svg?style=for-the-badge&labelColor=14191B&color=0AE194" alt="rating" />
+    <img src="https://img.shields.io/visual-studio-marketplace/stars/jasontheiler.kelp-forest-theme-vscode.svg?style=for-the-badge&labelColor=141B19&color=0AE194" alt="rating" />
   </a>
 </p>
 
@@ -43,7 +43,7 @@ To add a border between the different sections of VS Code, add the following to 
 
 ```json
 "workbench.colorCustomizations": {
-  "contrastBorder": "#2F4648"
+  "contrastBorder": "#2F4846"
 }
 ```
 
@@ -129,8 +129,8 @@ Once you have installed either of these extensions, add the appropriate settings
   },
   {
     "tag": "todo",
-    "color": "#E69C1880",
-    "backgroundColor": "#E69C181A"
+    "color": "#FF901880",
+    "backgroundColor": "#FF90181A"
   }
 ]
 ```
@@ -140,7 +140,7 @@ Once you have installed either of these extensions, add the appropriate settings
 <img src="https://raw.githubusercontent.com/jasontheiler/kelp-forest-theme-vscode/master/images/preview-bracket-pair-colorizer-2.png" alt="Bracket Pair Colorizer 2 preview" />
 
 ```json
-"bracket-pair-colorizer-2.colors": ["#15C3AC", "#E8E818", "#E69C18"],
+"bracket-pair-colorizer-2.colors": ["#15C3AC", "#FFE030", "#FF9018"],
 "bracket-pair-colorizer-2.highlightActiveScope": true
 ```
 
