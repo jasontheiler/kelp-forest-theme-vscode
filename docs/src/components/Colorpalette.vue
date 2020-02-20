@@ -62,12 +62,6 @@ query {
 }
 </static-query>
 
-<script>
-export default {
-  name: "Colorpalette",
-}
-</script>
-
 <style lang="scss" scoped>
 .colorpalette {
 }

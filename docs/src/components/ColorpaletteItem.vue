@@ -6,7 +6,6 @@
 
 <script>
 export default {
-  name: "ColorpaletteItem",
   props: {
     color: {
       type: String,
@@ -32,7 +31,7 @@ export default {
     parseHexValue(value) {
       const parsedValue = parseInt(value, 16)
 
-      if (isNaN(parsedValue)) return 0
+      if (isNaN(parsedValue)) return -1
       else return parsedValue / 255
     },
   },

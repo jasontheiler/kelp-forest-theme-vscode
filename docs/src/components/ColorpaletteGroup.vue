@@ -4,9 +4,9 @@
 
     <div class="colors">
       <ColorpaletteItem
-        v-for="color of colors"
-        :key="color.name"
-        :color="color.value"
+        v-for="{ name, value } of colors"
+        :key="name"
+        :color="value"
       />
     </div>
   </div>
@@ -14,7 +14,6 @@
 
 <script>
 export default {
-  name: "ColorpaletteGroup",
   props: {
     title: {
       type: String,
@@ -37,7 +36,8 @@ export default {
 
 .colors {
   max-width: 768px;
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 </style>

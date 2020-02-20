@@ -7,11 +7,11 @@
 const path = require("path")
 
 module.exports = {
+  siteName: "Kelp Forest Theme",
+  siteDescription: "A cool and cozy dark theme for Visual Studio Code",
   siteUrl: "https://jasontheiler.github.io",
   pathPrefix: "/kelp-forest-theme-vscode",
-  siteName: "Kelp Forest Theme",
   titleTemplate: "%s | Kelp Forest Theme",
-  siteDescription: "A cool and cozy dark theme for Visual Studio Code",
   icon: "./src/icons/logo.svg",
   plugins: [
     {
@@ -22,12 +22,12 @@ module.exports = {
       },
     },
   ],
-  chainWebpack(config) {
+  chainWebpack({ module }) {
     const preprocessor = "scss"
     const types = ["vue-modules", "vue", "normal-modules", "normal"]
 
-    for (const type of types) {
-      config.module
+    for (type of types) {
+      module
         .rule(preprocessor)
         .oneOf(type)
         .use("style-resource")

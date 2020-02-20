@@ -1,8 +1,24 @@
 <template>
   <div>
-    <Previews />
+    <header class="header">
+      <h1>KELP FOREST</h1>
 
-    <Colorpalette />
+      <h2>THEME</h2>
+
+      <p>A cool and cozy dark theme for Visual Studio Code</p>
+
+      <Stats />
+    </header>
+
+    <section class="section">
+      <Previews />
+    </section>
+
+    <section class="section">
+      <Colorpalette />
+    </section>
+
+    <footer class="footer"></footer>
   </div>
 </template>
 
@@ -14,4 +30,13 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.header,
+.section,
+.footer {
+  padding: 0 7.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>

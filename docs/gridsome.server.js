@@ -7,11 +7,11 @@
 
 const fetch = require("node-fetch")
 
-module.exports = function(api) {
-  api.loadSource(async ({ addCollection }) => {
+module.exports = ({ loadSource, createPages }) => {
+  loadSource(async ({ addCollection }) => {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
 
-    const globalColors = await fetch(
+    const { syntax, ui, ansi } = await fetch(
       "https://raw.githubusercontent.com/jasontheiler/kelp-forest-theme-vscode/master/src/globals.json"
     ).then(res => res.json())
 
@@ -19,7 +19,7 @@ module.exports = function(api) {
       typeName: "syntaxColors",
     })
 
-    for (const [name, value] of Object.entries(globalColors.syntax)) {
+    for (const [name, value] of Object.entries(syntax)) {
       syntaxColors.addNode({
         name,
         value,
@@ -30,7 +30,7 @@ module.exports = function(api) {
       typeName: "uiColors",
     })
 
-    for (const [name, value] of Object.entries(globalColors.ui)) {
+    for (const [name, value] of Object.entries(ui)) {
       uiColors.addNode({
         name,
         value,
@@ -41,7 +41,7 @@ module.exports = function(api) {
       typeName: "normalTerminalColors",
     })
 
-    for (const [name, value] of Object.entries(globalColors.ansi.normal)) {
+    for (const [name, value] of Object.entries(ansi.normal)) {
       normalTerminalColors.addNode({
         name,
         value,
@@ -52,7 +52,7 @@ module.exports = function(api) {
       typeName: "brightTerminalColors",
     })
 
-    for (const [name, value] of Object.entries(globalColors.ansi.bright)) {
+    for (const [name, value] of Object.entries(ansi.bright)) {
       brightTerminalColors.addNode({
         name,
         value,
@@ -60,7 +60,7 @@ module.exports = function(api) {
     }
   })
 
-  api.createPages(({ createPage }) => {
+  createPages(({ createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api/
   })
 }
