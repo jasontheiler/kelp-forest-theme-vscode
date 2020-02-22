@@ -1,9 +1,9 @@
 <template>
-  <div class="previews">
+  <section class="previews">
     <PreviewsSwiper
       :previews="$static.allPreviews.edges.map(({ node }) => node)"
     />
-  </div>
+  </section>
 </template>
 
 <static-query>
@@ -24,6 +24,11 @@ query {
 .previews {
   width: 100%;
   height: 100%;
-  box-shadow: 8px 8px 32px #0008;
+  padding: 64px 0;
+  box-sizing: border-box;
+
+  @include medium {
+    padding: 64px 7.5%;
+  }
 }
 </style>

@@ -19,6 +19,7 @@ export default {
       type: String,
       required: true,
     },
+
     colors: {
       type: Array,
       required: true,
@@ -29,9 +30,7 @@ export default {
 
 <style lang="scss" scoped>
 .colorpalette-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 .colors {

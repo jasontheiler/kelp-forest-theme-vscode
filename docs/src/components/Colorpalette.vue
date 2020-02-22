@@ -64,5 +64,11 @@ query {
 
 <style lang="scss" scoped>
 .colorpalette {
+  width: 100%;
+  height: 100%;
+  padding: 64px 7.5%;
+  box-sizing: border-box;
+  background-color: #00000040;
+  text-align: center;
 }
 </style>

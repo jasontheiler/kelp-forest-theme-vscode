@@ -12,6 +12,7 @@ export default {
       required: true,
     },
   },
+
   computed: {
     valueClass() {
       const [r, g, b] = this.color
@@ -27,6 +28,7 @@ export default {
       }
     },
   },
+
   methods: {
     parseHexValue(value) {
       const parsedValue = parseInt(value, 16)
@@ -45,6 +47,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 16px;
 }
 
 .bright {

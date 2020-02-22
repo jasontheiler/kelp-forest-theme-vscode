@@ -3,12 +3,7 @@
     <ClientOnly>
       <swiper :options="swiperOptionsMain" ref="swiperMain" class="swiper-main">
         <swiper-slide v-for="{ id, title, image } of previews" :key="id">
-          <g-image
-            :src="image"
-            :alt="title"
-            :immediate="true"
-            class="g-image"
-          />
+          <g-image :src="image" :alt="title" :immediate="true" />
         </swiper-slide>
 
         <div
@@ -70,7 +65,6 @@ export default {
   computed: {
     swiperOptionsShared() {
       return {
-        spaceBetween: 10,
         grabCursor: true,
         loop: true,
         loopedSlides: this.previews.length,
@@ -116,7 +110,7 @@ export default {
 <style lang="scss">
 .swiper-thumbs {
   .swiper-slide {
-    opacity: 0.5;
+    opacity: 0.75;
   }
 
   .swiper-slide-active {
