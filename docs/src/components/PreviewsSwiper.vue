@@ -3,7 +3,7 @@
     <ClientOnly>
       <swiper :options="swiperOptionsMain" ref="swiperMain" class="swiper-main">
         <swiper-slide v-for="{ id, title, image } of previews" :key="id">
-          <g-image :src="image" :alt="title" :immediate="true" />
+          <g-image :src="image" :alt="title" immediate="true" />
         </swiper-slide>
 
         <div

@@ -5,7 +5,14 @@
     <div class="text">
       <p>
         <strong>Scroll</strong> up and <strong>click</strong> the install button
-        or <strong>visit</strong> the Visual Studio Code Marketplace and
+        or <strong>visit</strong> the
+        <VLink
+          :href="
+            `https://marketplace.visualstudio.com/items?itemName=${$static.metadata.extensionId}`
+          "
+          >Visual Studio Code Marketplace</VLink
+        >
+        and
         <strong>install</strong>
         it from there.
       </p>
@@ -17,7 +24,21 @@
       <p>
         <strong>Search</strong> for
         <VCode>{{ $static.metadata.siteName }}</VCode> in the Visual Studio Code
-        <strong>Extensions</strong> tab.
+        <strong>Extensions</strong> tab (<VCode>Ctrl+Shift+X</VCode> or
+        <VCode>⌘+Shift+X</VCode>).
+      </p>
+
+      <p>
+        <strong>&nbsp;&nbsp;&nbsp;&nbsp;OR</strong>
+      </p>
+
+      <p>
+        <strong>Access</strong> the <strong>Quick Open</strong> menu in Visual
+        Studio Code (<VCode>Ctrl+P</VCode> or <VCode>⌘+P</VCode>) and
+        <strong>execute</strong>
+        the following command:
+        <VCode>ext install {{ $static.metadata.extensionId }}</VCode
+        >.
       </p>
     </div>
   </section>
@@ -27,6 +48,7 @@
 query {
   metadata {
     siteName
+    extensionId
   }
 }
 </static-query>

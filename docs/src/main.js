@@ -20,6 +20,7 @@ import ThePreviews from "~/components/ThePreviews.vue"
 import VCode from "~/components/VCode.vue"
 import VLink from "~/components/VLink.vue"
 import VLinkButton from "~/components/VLinkButton.vue"
+import VSmall from "~/components/VSmall.vue"
 
 export default function(Vue, { router, head, isClient }) {
   Vue.component("font-awesome-icon", FontAwesomeIcon)
@@ -39,4 +40,5 @@ export default function(Vue, { router, head, isClient }) {
   Vue.component("VCode", VCode)
   Vue.component("VLink", VLink)
   Vue.component("VLinkButton", VLinkButton)
+  Vue.component("VSmall", VSmall)
 }

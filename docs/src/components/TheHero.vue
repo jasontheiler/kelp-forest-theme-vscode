@@ -31,6 +31,18 @@
     >
       <font-awesome-icon :icon="icons.faGithub" />&nbsp;&nbsp;Repository
     </VLinkButton>
+
+    <p>
+      <VSmall>
+        <VLink
+          href="https://code.visualstudio.com/docs/editor/extension-gallery"
+        >
+          Trouble installing?&nbsp;&nbsp;<font-awesome-icon
+            :icon="icons.faExternalLinkAlt"
+          />
+        </VLink>
+      </VSmall>
+    </p>
   </header>
 </template>
 
@@ -46,7 +58,10 @@ query {
 </static-query>
 
 <script>
-import { faDownload } from "@fortawesome/free-solid-svg-icons"
+import {
+  faDownload,
+  faExternalLinkAlt,
+} from "@fortawesome/free-solid-svg-icons"
 import { faMicrosoft, faGithub } from "@fortawesome/free-brands-svg-icons"
 
 import logo from "~/icons/logo.svg"
@@ -65,6 +80,7 @@ export default {
     icons() {
       return {
         faDownload,
+        faExternalLinkAlt,
         faMicrosoft,
         faGithub,
       }

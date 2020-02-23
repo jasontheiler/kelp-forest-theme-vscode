@@ -1,5 +1,7 @@
 <template>
   <svg :viewBox="`0 0 ${viewBoxWidth} 16`" class="animated-title">
+    <title>{{ text }}</title>
+
     <text
       v-for="(className, idx) of titleElements"
       :key="idx"

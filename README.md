@@ -32,15 +32,19 @@ This theme is based on [Subnautica's](https://unknownworlds.com/subnautica/) kel
 
 ## Installation
 
-**Visit** the [homepage](https://jasontheiler.github.io/kelp-forest-theme-vscode) or the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode) and **install** it directly from there.
+**Visit** the [homepage](https://jasontheiler.github.io/kelp-forest-theme-vscode) or the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode) and **install** it from there.
 
 &nbsp;&nbsp;&nbsp;&nbsp;**OR**
 
-**Search** for `Kelp Forest Theme` in the Visual Studio Code **Extensions** tab.
+**Search** for `Kelp Forest Theme` in the Visual Studio Code **Extensions** tab (`Ctrl+Shift+X` or `⌘+Shift+X`).
+
+&nbsp;&nbsp;&nbsp;&nbsp;**OR**
+
+**Access** the **Quick Open** menu in Visual Studio Code (`Ctrl+P` or `⌘+P`) and **execute** the following command: `ext install jasontheiler.kelp-forest-theme-vscode`.
 
 ## Personalization
 
-Visual Studio Code makes it easy to customize just about every element of it. If you would like to personalize the look of something, open the **Command Palette** with `Ctrl+Shift+P` or `⌘+Shift+P` and select **Preferences: Open Settings (JSON)**. In this file, you can override the settings and colors of Visual Studio Code and any installed color theme. Below are some common customizations to the Kelp Forest Theme, that you can copy and paste into your `settings.json`.
+Visual Studio Code makes it easy to customize just about every element of it. If you would like to personalize the look of something, access the **Command Palette** menu in Visual Studio Code (`Ctrl+Shift+P` or `⌘+Shift+P`) and select **Preferences: Open Settings (JSON)**. In this file, you can override the settings and colors of Visual Studio Code and any installed color theme. Below are some common customizations to the Kelp Forest Theme, that you can paste into your `settings.json`.
 
 > For more information on theming, visit the official [Theming Guide](https://code.visualstudio.com/api/extension-capabilities/theming) and [Theme Color Reference](https://code.visualstudio.com/api/references/theme-color).
 
