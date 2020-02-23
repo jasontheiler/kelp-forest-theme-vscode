@@ -20,7 +20,7 @@ export default {
         .match(/.{1,2}/g)
         .map(value => this.parseHexValue(value))
 
-      const brightness = 0.2126 * r + 0.7152 * g + 0.0722 * b
+      const brightness = 0.299 * r + 0.587 * g + 0.114 * b
 
       return {
         bright: brightness < 0.5,

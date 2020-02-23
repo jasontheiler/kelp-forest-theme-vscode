@@ -64,6 +64,7 @@ query {
 }
 
 .text {
+  max-width: 1024px;
   display: inline-block;
   text-align: start;
 }

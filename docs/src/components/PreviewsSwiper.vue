@@ -111,10 +111,12 @@ export default {
 .swiper-thumbs {
   .swiper-slide {
     opacity: 0.75;
+    cursor: pointer;
   }
 
   .swiper-slide-active {
     opacity: 1;
+    cursor: unset;
   }
 }
 
