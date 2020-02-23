@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode">
+  <a href="https://jasontheiler.github.io/kelp-forest-theme-vscode">
     <img src="https://raw.githubusercontent.com/jasontheiler/kelp-forest-theme-vscode/master/images/logo.png" alt="Kelp Forest Theme" height="256px" />
   </a>
 </p>
@@ -19,7 +19,7 @@
     <img src="https://img.shields.io/visual-studio-marketplace/i/jasontheiler.kelp-forest-theme-vscode.svg?style=for-the-badge&logo=docusign&logoColor=FFFFFF&labelColor=141B19&color=0AE194" alt="downloads" />
   </a>
 
-  <a href="https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode">
+  <a href="https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode&ssr=false#review-details">
     <img src="https://img.shields.io/visual-studio-marketplace/r/jasontheiler.kelp-forest-theme-vscode.svg?style=for-the-badge&logo=reverbnation&logoColor=FFFFFF&labelColor=141B19&color=0AE194" alt="rating" />
   </a>
 </p>
@@ -28,24 +28,25 @@
 
 This theme is based on [Subnautica's](https://unknownworlds.com/subnautica/) kelp forest biome and [Jonathan Olaleye's](https://github.com/jolaleye) [Horizon Theme](https://marketplace.visualstudio.com/items?itemName=jolaleye.horizon-theme-vscode). It includes a regular, italic and bold variant of the theme.
 
+### _More previews and the complete colorpalette can be found [here](https://jasontheiler.github.io/kelp-forest-theme-vscode)._
+
 ## Installation
 
-1. Open the **Extensions** tab in the VS Code sidebar.
-2. Search for `Kelp Forest Theme` and locate the extension.
-3. Hit **Install**.
-4. Open the **Command Palette** with `Ctrl+Shift+P` or `⇧⌘P`.
-5. Select **Preferences: Color Theme** and choose a Kelp Forest variant.
-6. Enjoy! 🌊 Also, check out the personalization options and the recommended fonts and extensions below...
+**Visit** the [homepage](https://jasontheiler.github.io/kelp-forest-theme-vscode) or the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode) and **install** it directly from there.
+
+&nbsp;&nbsp;&nbsp;&nbsp;**OR**
+
+**Search** for `Kelp Forest Theme` in the Visual Studio Code **Extensions** tab.
 
 ## Personalization
 
-VS Code makes it easy to customize just about every element of it. If you would like to personalize the look of something, open the **Command Palette** with `Ctrl+Shift+P` or `⇧⌘P` and select **Preferences: Open Settings (JSON)**. In this file, you can override the settings and colors of VS Code and any color theme. Below are some common customizations to the Kelp Forest Theme, that you can copy and paste into your `settings.json`.
+Visual Studio Code makes it easy to customize just about every element of it. If you would like to personalize the look of something, open the **Command Palette** with `Ctrl+Shift+P` or `⌘+Shift+P` and select **Preferences: Open Settings (JSON)**. In this file, you can override the settings and colors of Visual Studio Code and any installed color theme. Below are some common customizations to the Kelp Forest Theme, that you can copy and paste into your `settings.json`.
 
-_For more information on theming, visit the official [Theming Guide](https://code.visualstudio.com/api/extension-capabilities/theming) and [Theme Color Reference](https://code.visualstudio.com/api/references/theme-color)._
+> For more information on theming, visit the official [Theming Guide](https://code.visualstudio.com/api/extension-capabilities/theming) and [Theme Color Reference](https://code.visualstudio.com/api/references/theme-color).
 
 ### Contrast
 
-To add a border between the different sections of your VS Code, add the following to your `settings.json`:
+To add a border between the different sections of your Visual Studio Code, add the following to your `settings.json`:
 
 ```json
 "workbench.colorCustomizations": {
@@ -93,12 +94,11 @@ For gray rather than green brackets around HTML and JSX tags, add the following 
 
 I prefer using fonts that support ligatures, which is why I recommend the following fonts:
 
-- [Victor Mono](https://rubjo.github.io/victor-mono) (Free)
-- [Dank Mono](https://dank.sh) (£40)
-- [Fira Code](https://github.com/tonsky/FiraCode) (Free)
-- [Cascadia Code](https://github.com/microsoft/cascadia-code) (Free)
+- [Victor Mono](https://rubjo.github.io/victor-mono)
+- [Cascadia Code](https://github.com/microsoft/cascadia-code)
+- [Fira Code](https://github.com/tonsky/FiraCode)
 
-> Note: Ensure you enable font ligatures by adding `"editor.fontLigatures": true` to your `settings.json`.
+> Ensure you enable font ligatures by adding `"editor.fontLigatures": true` to your `settings.json`.
 
 ## Recommended Extensions & Settings
 
@@ -154,4 +154,6 @@ Once you have installed either of these extensions, add the appropriate settings
 
 ## License
 
-[MIT](https://github.com/jasontheiler/kelp-forest-theme-vscode/blob/master/LICENSE) © [Jason Theiler](https://github.com/JasonTheiler)
+[MIT License](https://github.com/jasontheiler/kelp-forest-theme-vscode/blob/master/LICENSE)
+
+Copyright (c) 2020 [Jason Theiler](https://github.com/JasonTheiler)
