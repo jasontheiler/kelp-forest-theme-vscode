@@ -1,5 +1,5 @@
 <template>
-  <div class="colorpalette-item" :style="{ backgroundColor: color }">
+  <div class="colorpalette-group-item" :style="{ backgroundColor: color }">
     <span :class="valueClass">{{ color }}</span>
   </div>
 </template>
@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.colorpalette-item {
+.colorpalette-group-item {
   width: 96px;
   height: 96px;
   display: flex;

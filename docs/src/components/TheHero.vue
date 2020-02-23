@@ -1,10 +1,12 @@
 <template>
   <header class="hero">
-    <AnimatedTitle title="Kelp Forest Theme" />
+    <img :src="logo" alt="logo" class="logo" />
+
+    <AnimatedTitle :text="$static.metadata.siteName" />
 
     <p>v{{ version }}</p>
 
-    <p>A cool and cozy dark theme for Visual Studio Code</p>
+    <p>{{ $static.metadata.siteDescription }}</p>
 
     <p>
       {{ installs }} installs | <StarRating :rating="rating" /> ({{
@@ -12,25 +14,42 @@
       }})
     </p>
 
-    <LinkButton href="vscode:extension/jasontheiler.kelp-forest-theme-vscode">
+    <VLinkButton :href="`vscode:extension/${$static.metadata.extensionId}`">
       <font-awesome-icon :icon="icons.faDownload" />&nbsp;&nbsp;Install
-    </LinkButton>
+    </VLinkButton>
 
-    <LinkButton
-      href="https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode"
+    <VLinkButton
+      :href="
+        `https://marketplace.visualstudio.com/items?itemName=${$static.metadata.extensionId}`
+      "
     >
       <font-awesome-icon :icon="icons.faMicrosoft" />&nbsp;&nbsp;Marketplace
-    </LinkButton>
+    </VLinkButton>
 
-    <LinkButton href="https://github.com/jasontheiler/kelp-forest-theme-vscode">
+    <VLinkButton
+      :href="`https://github.com/${$static.metadata.repositoryPath}`"
+    >
       <font-awesome-icon :icon="icons.faGithub" />&nbsp;&nbsp;Repository
-    </LinkButton>
+    </VLinkButton>
   </header>
 </template>
+
+<static-query>
+query {
+  metadata {
+    siteName
+    siteDescription
+    extensionId
+    repositoryPath
+  }
+}
+</static-query>
 
 <script>
 import { faDownload } from "@fortawesome/free-solid-svg-icons"
 import { faMicrosoft, faGithub } from "@fortawesome/free-brands-svg-icons"
+
+import logo from "~/icons/logo.svg"
 
 export default {
   data() {
@@ -50,6 +69,10 @@ export default {
         faGithub,
       }
     },
+
+    logo() {
+      return logo
+    },
   },
 
   mounted() {
@@ -66,7 +89,7 @@ export default {
               criteria: [
                 {
                   filterType: 7,
-                  value: "jasontheiler.kelp-forest-theme-vscode",
+                  value: `${this.$static.metadata.extensionId}`,
                 },
               ],
             },
@@ -102,5 +125,11 @@ export default {
   box-sizing: border-box;
   background-color: #00000040;
   text-align: center;
+}
+
+.logo {
+  width: 50vw;
+  max-width: 512px;
+  margin-bottom: 32px;
 }
 </style>

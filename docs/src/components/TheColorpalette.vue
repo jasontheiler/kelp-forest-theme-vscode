@@ -1,5 +1,5 @@
 <template>
-  <div class="colorpalette">
+  <section class="colorpalette">
     <ColorpaletteGroup
       title="Syntax Colors"
       :colors="$static.allSyntaxColors.edges.map(({ node }) => node)"
@@ -19,7 +19,7 @@
       title="Bright Terminal Colors"
       :colors="$static.allBrightTerminalColors.edges.map(({ node }) => node)"
     />
-  </div>
+  </section>
 </template>
 
 <static-query>
@@ -68,7 +68,6 @@ query {
   height: 100%;
   padding: 64px 7.5%;
   box-sizing: border-box;
-  background-color: #00000040;
   text-align: center;
 }
 </style>

@@ -5,6 +5,7 @@
         <g-image
           src="~/images/background.jpg"
           alt="Background"
+          immediate="true"
           blur="32"
           quality="5"
         />
@@ -15,7 +16,7 @@
 
 <style lang="scss" scoped>
 .background {
-  // ! position: fixed causes problem with viewport height in mobile Google Chrome.
+  // ! position: fixed; causes problem with viewport height in mobile Google Chrome.
   position: fixed;
   left: 50%;
   top: 50%;
@@ -49,7 +50,7 @@
   height: 100%;
   object-fit: cover;
   filter: blur(32px);
-  animation: fade-in 1s;
+  animation: fade-in 2s;
   will-change: opacity;
 }
 

@@ -1,17 +1,17 @@
 <template>
-  <div>
-    <Background />
-
-    <Hero />
+  <Layout>
+    <TheHero />
 
     <main>
-      <Previews />
+      <ThePreviews />
 
-      <Colorpalette />
+      <TheInstallation />
+
+      <TheColorpalette />
     </main>
 
-    <Footer />
-  </div>
+    <TheFooter />
+  </Layout>
 </template>
 
 <script>

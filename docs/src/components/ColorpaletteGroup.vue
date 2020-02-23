@@ -3,7 +3,7 @@
     <h2>{{ title }}</h2>
 
     <div class="colors">
-      <ColorpaletteItem
+      <ColorpaletteGroupItem
         v-for="{ name, value } of colors"
         :key="name"
         :color="value"
@@ -35,6 +35,7 @@ export default {
 
 .colors {
   max-width: 768px;
+  margin-bottom: 64px;
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;

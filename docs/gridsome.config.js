@@ -13,6 +13,12 @@ module.exports = {
   pathPrefix: "/kelp-forest-theme-vscode",
   titleTemplate: "%s | Kelp Forest Theme",
   icon: "./src/icons/logo.svg",
+  metadata: {
+    author: "Jason Theiler",
+    publisher: "jasontheiler",
+    extensionId: "jasontheiler.kelp-forest-theme-vscode",
+    repositoryPath: "jasontheiler/kelp-forest-theme-vscode",
+  },
   plugins: [
     {
       use: "@gridsome/source-filesystem",

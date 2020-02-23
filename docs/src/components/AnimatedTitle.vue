@@ -10,11 +10,11 @@
       ref="title"
     >
       <tspan
-        v-for="(letter, jdx) of title"
+        v-for="(letter, jdx) of text"
         :key="jdx"
         :style="{
           animationDelay: `
-          ${-((title.length - jdx) / title.length) * 1.5 + 0.5 * idx - 0.5}s
+          ${-((text.length - jdx) / text.length) * 1.5 + 0.5 * idx - 0.5}s
             `,
         }"
         class="letter"
@@ -28,7 +28,7 @@
 <script>
 export default {
   props: {
-    title: {
+    text: {
       type: String,
       required: true,
     },
@@ -50,7 +50,8 @@ export default {
     const minWidth = 125
     const titleWidth = this.$refs.title[0].getBBox().width
 
-    this.viewBoxWidth = (titleWidth <= minWidth ? minWidth : titleWidth) * 1.05
+    this.viewBoxWidth =
+      (titleWidth <= minWidth ? minWidth : titleWidth) * 1.0125
   },
 }
 </script>

@@ -24,11 +24,7 @@ query {
 .previews {
   width: 100%;
   height: 100%;
-  padding: 64px 0;
+  padding: 64px 7.5%;
   box-sizing: border-box;
-
-  @include medium {
-    padding: 64px 7.5%;
-  }
 }
 </style>
