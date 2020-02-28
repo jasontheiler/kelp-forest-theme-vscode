@@ -33,7 +33,7 @@ export default {
       if (rating % 1 !== 0) {
         if (rating % 1 >= 0.75) {
           stars.push(fasStar)
-        } else if (rating % 1 < 0.75 && rating % 1 >= 0.25) {
+        } else if (rating % 1 >= 0.25) {
           stars.push(fasStarHalfAlt)
         } else {
           stars.push(farStar)

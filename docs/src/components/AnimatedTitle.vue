@@ -15,9 +15,7 @@
         v-for="(letter, jdx) of text"
         :key="jdx"
         :style="{
-          animationDelay: `
-          ${-((text.length - jdx) / text.length) * 1.5 + 0.5 * idx - 0.5}s
-            `,
+          animationDelay: calcDelay(text.length, idx, jdx),
         }"
         class="letter"
       >
@@ -54,6 +52,12 @@ export default {
 
     this.viewBoxWidth =
       (titleWidth <= minWidth ? minWidth : titleWidth) * 1.0125
+  },
+
+  methods: {
+    calcDelay(length, idx, jdx) {
+      return `${-((length - jdx) / length) * 1.5 + 0.5 * idx - 0.5}s`
+    },
   },
 }
 </script>
