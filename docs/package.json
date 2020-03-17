@@ -19,7 +19,7 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-json": "^0.2.1",
     "gh-pages": "^2.2.0",
-    "gridsome": "^0.7.12",
+    "gridsome": "^0.7.13",
     "node-fetch": "^2.6.0",
     "node-sass": "^4.13.1",
     "sass-loader": "^8.0.2",
