@@ -1,48 +1,61 @@
 <template>
   <div class="previews-swiper">
-    <ClientOnly>
-      <swiper :options="swiperOptionsMain" ref="swiperMain" class="swiper-main">
-        <swiper-slide v-for="{ id, title, image } of previews" :key="id">
-          <g-image :src="image" :alt="title" immediate="true" />
-        </swiper-slide>
-
+    <div
+      v-swiper:swiperMain="swiperOptionsMain"
+      ref="swiperMain"
+      class="swiper-main"
+    >
+      <div class="swiper-wrapper">
         <div
-          class="swiper-button-prev swiper-button-white"
-          slot="button-prev"
-        ></div>
-
-        <div
-          class="swiper-button-next swiper-button-white"
-          slot="button-next"
-        ></div>
-      </swiper>
-
-      <swiper
-        :options="swiperOptionsThumbs"
-        ref="swiperThumbs"
-        class="swiper-thumbs"
-      >
-        <swiper-slide
           v-for="{ id, title, image } of previews"
           :key="id"
           class="swiper-slide"
         >
-          <g-image
-            :src="image"
-            :alt="title"
-            :immediate="true"
-            class="g-image"
-          />
-        </swiper-slide>
-      </swiper>
-    </ClientOnly>
+          <div class="swiper-zoom-container">
+            <g-image :src="image" :alt="title" immediate="true" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="swiper-button-prev swiper-button-white"
+        slot="button-prev"
+      ></div>
+
+      <div
+        class="swiper-button-next swiper-button-white"
+        slot="button-next"
+      ></div>
+    </div>
+
+    <div
+      v-swiper:swiperThumbs="swiperOptionsThumbs"
+      ref="swiperThumbs"
+      class="swiper-thumbs"
+    >
+      <div class="swiper-wrapper">
+        <div
+          v-for="{ id, title, image } of previews"
+          :key="id"
+          class="swiper-slide"
+        >
+          <g-image :src="image" :alt="title" immediate="true" />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import "swiper/dist/css/swiper.css"
+import "swiper/css/swiper.css"
 
 export default {
+  directives: !process.browser
+    ? {}
+    : {
+        swiper: require("vue-awesome-swiper").directive,
+      },
+
   props: {
     previews: {
       type: Array,
@@ -50,22 +63,9 @@ export default {
     },
   },
 
-  components: {
-    swiper: () =>
-      import("vue-awesome-swiper")
-        .then(({ swiper }) => swiper)
-        .catch(),
-
-    swiperSlide: () =>
-      import("vue-awesome-swiper")
-        .then(({ swiperSlide }) => swiperSlide)
-        .catch(),
-  },
-
   computed: {
     swiperOptionsShared() {
       return {
-        grabCursor: true,
         loop: true,
         loopedSlides: this.previews.length,
       }
@@ -74,6 +74,7 @@ export default {
     swiperOptionsMain() {
       return {
         ...this.swiperOptionsShared,
+        grabCursor: true,
         navigation: {
           prevEl: ".swiper-button-prev",
           nextEl: ".swiper-button-next",
@@ -81,6 +82,7 @@ export default {
         autoplay: {
           delay: 5000,
         },
+        zoom: true,
       }
     },
 
@@ -89,20 +91,18 @@ export default {
         ...this.swiperOptionsShared,
         slidesPerView: 5,
         centeredSlides: true,
-        touchRatio: 0.2,
+        allowTouchMove: false,
         slideToClickedSlide: true,
       }
     },
   },
 
-  updated() {
-    if (this.$refs.swiperMain && this.$refs.swiperThumbs) {
-      const swiperMain = this.$refs.swiperMain.swiper
-      const swiperThumbs = this.$refs.swiperThumbs.swiper
+  mounted() {
+    const swiperMain = this.$refs.swiperMain.swiper
+    const swiperThumbs = this.$refs.swiperThumbs.swiper
 
-      swiperMain.controller.control = swiperThumbs
-      swiperThumbs.controller.control = swiperMain
-    }
+    swiperMain.controller.control = swiperThumbs
+    swiperThumbs.controller.control = swiperMain
   },
 }
 </script>

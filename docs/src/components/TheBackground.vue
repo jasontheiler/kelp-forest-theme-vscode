@@ -50,8 +50,6 @@
   height: 100%;
   object-fit: cover;
   filter: blur(32px);
-  animation: fade-in 2s;
-  will-change: opacity;
 }
 
 $floatDistance: 16px;
@@ -71,15 +69,6 @@ $floatDistance: 16px;
   }
   100% {
     transform: translateY(-$floatDistance);
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 </style>

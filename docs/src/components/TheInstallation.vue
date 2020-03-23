@@ -18,7 +18,7 @@
       </p>
 
       <p>
-        <strong>&nbsp;&nbsp;&nbsp;&nbsp;OR</strong>
+        <strong>OR</strong>
       </p>
 
       <p>
@@ -29,7 +29,7 @@
       </p>
 
       <p>
-        <strong>&nbsp;&nbsp;&nbsp;&nbsp;OR</strong>
+        <strong>OR</strong>
       </p>
 
       <p>
@@ -66,6 +66,5 @@ query {
 .text {
   max-width: 1024px;
   display: inline-block;
-  text-align: start;
 }
 </style>

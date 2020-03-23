@@ -106,16 +106,4 @@ export default {
     stroke-dashoffset: 0%;
   }
 }
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  73% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 </style>
