@@ -1,12 +1,12 @@
 <p align="center">
   <a href="https://jasontheiler.github.io/kelp-forest-theme-vscode">
-    <img src="https://raw.githubusercontent.com/jasontheiler/kelp-forest-theme-vscode/master/images/logo.png" alt="Kelp Forest Theme" height="256px" />
+    <img src="/images/logo.png" alt="Kelp Forest Theme" height="256px" />
   </a>
 </p>
 
 <h1 align="center">Kelp Forest Theme</h1>
 
-<h3 align="center">A cool and cozy dark theme for Visual Studio Code</h3>
+<h3 align="center">A cool and cozy dark theme for Visual Studio Code.</h3>
 
 <br />
 
@@ -24,7 +24,7 @@
   </a>
 </p>
 
-<img src="https://raw.githubusercontent.com/jasontheiler/kelp-forest-theme-vscode/master/images/preview.png" alt="Kelp Forest Theme preview" />
+<img src="/images/preview.png" alt="Kelp Forest Theme preview" />
 
 This theme is based on [Subnautica's](https://unknownworlds.com/subnautica/) kelp forest biome and [Jonathan Olaleye's](https://github.com/jolaleye) [Horizon Theme](https://marketplace.visualstudio.com/items?itemName=jolaleye.horizon-theme-vscode). It includes a regular, italic and bold variant of the theme.
 
@@ -115,7 +115,7 @@ Once you have installed either of these extensions, add the appropriate settings
 
 ### Better Comments
 
-<img src="https://raw.githubusercontent.com/jasontheiler/kelp-forest-theme-vscode/master/images/preview-better-comments.png" alt="Better Comments preview" />
+<img src="/images/preview-better-comments.png" alt="Better Comments preview" />
 
 ```json
 "better-comments.tags": [
@@ -149,7 +149,7 @@ Once you have installed either of these extensions, add the appropriate settings
 
 ### Bracket Pair Colorizer 2
 
-<img src="https://raw.githubusercontent.com/jasontheiler/kelp-forest-theme-vscode/master/images/preview-bracket-pair-colorizer-2.png" alt="Bracket Pair Colorizer 2 preview" />
+<img src="/images/preview-bracket-pair-colorizer-2.png" alt="Bracket Pair Colorizer 2 preview" />
 
 ```json
 "bracket-pair-colorizer-2.colors": ["#15C3AC", "#FFE030", "#FF9018"],
@@ -158,6 +158,6 @@ Once you have installed either of these extensions, add the appropriate settings
 
 ## License
 
-[MIT License](https://github.com/jasontheiler/kelp-forest-theme-vscode/blob/master/LICENSE)
+[MIT License](/LICENSE)
 
-Copyright (c) 2020 [Jason Theiler](https://github.com/JasonTheiler)
+Copyright © 2020 [Jason Theiler](https://github.com/JasonTheiler)

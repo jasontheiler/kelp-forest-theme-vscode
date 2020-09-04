@@ -8,7 +8,7 @@ const path = require("path")
 
 module.exports = {
   siteName: "Kelp Forest Theme",
-  siteDescription: "A cool and cozy dark theme for Visual Studio Code",
+  siteDescription: "A cool and cozy dark theme for Visual Studio Code.",
   siteUrl: "https://jasontheiler.github.io",
   pathPrefix: "/kelp-forest-theme-vscode",
   titleTemplate: "%s | Kelp Forest Theme",
