@@ -51,13 +51,12 @@
   "engines": {
     "vscode": "^1.26.0"
   },
-  "devDependencies": {
-    "file-system": "^2.2.2",
-    "mustache": "^3.2.1",
-    "prettier": "^1.19.1"
-  },
   "scripts": {
     "format": "prettier --write \"**/*.{js,json,md}\"",
     "build": "node src/build"
+  },
+  "devDependencies": {
+    "mustache": "^3.2.1",
+    "prettier": "^1.19.1"
   }
 }
