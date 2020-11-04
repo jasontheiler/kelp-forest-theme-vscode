@@ -1,30 +1,20 @@
-<p align="center">
-  <a href="https://jasontheiler.github.io/kelp-forest-theme-vscode">
-    <img src="/images/logo.png" alt="Kelp Forest Theme" height="256px" />
-  </a>
-</p>
+<div align="center">
 
-<h1 align="center">Kelp Forest Theme</h1>
+<a href="https://jasontheiler.github.io/kelp-forest-theme-vscode">
+  <img src="/images/logo.png" alt="Kelp Forest Theme" height="128px" />
+</a>
 
-<h3 align="center">A cool and cozy dark theme for Visual Studio Code.</h3>
+# Kelp Forest Theme
 
-<br />
+**A cool and cozy dark theme for Visual Studio Code.**
 
-<p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode">
-    <img src="https://img.shields.io/vscode-marketplace/v/jasontheiler.kelp-forest-theme-vscode.svg?style=for-the-badge&logo=visual-studio-code&labelColor=141B19&color=0AE194" alt="version" />
-  </a>
+[![version](https://img.shields.io/vscode-marketplace/v/jasontheiler.kelp-forest-theme-vscode.svg?style=flat-square&logo=visual-studio-code&labelColor=141B19&color=0AE194)](https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode)
+[![downloads](https://img.shields.io/visual-studio-marketplace/i/jasontheiler.kelp-forest-theme-vscode.svg?style=flat-square&logo=docusign&logoColor=FFFFFF&labelColor=141B19&color=0AE194)](https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode)
+[![rating](https://img.shields.io/visual-studio-marketplace/r/jasontheiler.kelp-forest-theme-vscode.svg?style=flat-square&logo=reverbnation&logoColor=FFFFFF&labelColor=141B19&color=0AE194)](https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode&ssr=false#review-details)
 
-  <a href="https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode">
-    <img src="https://img.shields.io/visual-studio-marketplace/i/jasontheiler.kelp-forest-theme-vscode.svg?style=for-the-badge&logo=docusign&logoColor=FFFFFF&labelColor=141B19&color=0AE194" alt="downloads" />
-  </a>
+![Kelp Forest Theme preview](/images/preview.png)
 
-  <a href="https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode&ssr=false#review-details">
-    <img src="https://img.shields.io/visual-studio-marketplace/r/jasontheiler.kelp-forest-theme-vscode.svg?style=for-the-badge&logo=reverbnation&logoColor=FFFFFF&labelColor=141B19&color=0AE194" alt="rating" />
-  </a>
-</p>
-
-<img src="/images/preview.png" alt="Kelp Forest Theme preview" />
+</div>
 
 This theme is based on [Subnautica's](https://unknownworlds.com/subnautica/) kelp forest biome and [Jonathan Olaleye's](https://github.com/jolaleye) [Horizon Theme](https://marketplace.visualstudio.com/items?itemName=jolaleye.horizon-theme-vscode). It includes a regular, italic and bold variant of the theme.
 
@@ -115,7 +105,7 @@ Once you have installed either of these extensions, add the appropriate settings
 
 ### Better Comments
 
-<img src="/images/preview-better-comments.png" alt="Better Comments preview" />
+![Better Comments preview](/images/preview-better-comments.png)
 
 ```json
 "better-comments.tags": [
@@ -149,7 +139,7 @@ Once you have installed either of these extensions, add the appropriate settings
 
 ### Bracket Pair Colorizer 2
 
-<img src="/images/preview-bracket-pair-colorizer-2.png" alt="Bracket Pair Colorizer 2 preview" />
+![Bracket Pair Colorizer 2 preview](/images/preview-bracket-pair-colorizer-2.png)
 
 ```json
 "bracket-pair-colorizer-2.colors": ["#15C3AC", "#FFE030", "#FF9018"],

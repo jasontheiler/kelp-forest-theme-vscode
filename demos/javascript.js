@@ -22,8 +22,8 @@ async function func(url) {
   await op()
 
   fetch(url)
-    .then(res => res.json())
-    .then(res => console.log(res))
+    .then((res) => res.json())
+    .then((res) => console.log(res))
 
   return
 }
@@ -70,7 +70,7 @@ return (
     <Something something="something" />
 
     <ul>
-      {items?.map(item => (
+      {items?.map((item) => (
         <li key={item.something}>{something}</li>
       ))}
     </ul>

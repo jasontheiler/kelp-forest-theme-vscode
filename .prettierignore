@@ -1,5 +1,3 @@
-**/.cache
-**/.temp
-**/dist
+docs
 themes
 package-lock.json

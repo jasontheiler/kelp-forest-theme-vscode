@@ -5,71 +5,71 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.1.3] - TBA
+## [Unreleased]
 
 ### Changed
 
-- Update README.md
+- README.md
 
 ## [1.1.2] - 2020-02-23
 
 ### Changed
 
-- Update README.md
+- README.md
 
 ## [1.1.1] - 2020-02-23
 
 ### Added
 
-- Add homepage link
+- Homepage link
 
 ### Changed
 
-- Update README.md
+- README.md
 
 ## [1.1.0] - 2020-02-12
 
 ### Changed
 
-- Update syntax coloring
-- Update ui coloring
-- Update logo
-- Update preview images
-- Update README.md
-- Update marketplace banner color
+- Syntax coloring
+- UI coloring
+- Logo
+- Preview images
+- README.md
+- Marketplace banner color
 
 ## [1.0.3] - 2020-02-07
 
 ### Fixed
 
-- Fix .afdesign and .afphoto files not being ignored
+- `.afdesign` and `.afphoto` files not being ignored
 
 ## [1.0.2] - 2020-02-07
 
 ### Added
 
-- Add background color for folded ranges
+- Background color for folded ranges
 
 ### Changed
 
-- Update logo
-- Update image names
-- Update image source links in README.md
+- Logo
+- Image names
+- Image source links in README.md
 
 ### Removed
 
-- Move preview images unused in README.md
+- Preview images unused in README.md
 
 ## [1.0.1] - 2020-02-03
 
 ### Added
 
-- Add missing links in README.md
-- Add missing keywords
+- Missing links in README.md
+- Missing keywords
 
 ### Changed
 
-- Update logo
+- Logo
 
 ## [1.0.0] - 2020-02-02
 
